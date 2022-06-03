@@ -1,1 +1,1 @@
-En proceso... :)
+Pagina del clima que utiliza la api de weatherapi.com
