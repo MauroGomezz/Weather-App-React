@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Loading from './Loading';
 import WeatheMainInfo from './WeatheMainInfo';
 import WeatherForm from './WeatherForm';
 
@@ -31,7 +32,7 @@ const WeatherApp = () => {
 return (
     <div className='container pt-5 vh-100'>
         <WeatherForm onChangeCity={handleOnChangeCity}/>
-        {weather ? <WeatheMainInfo weather={weather}/> : "Buscando..."}
+        {weather ? <WeatheMainInfo weather={weather}/> : <Loading />}
     </div>
   )
 }
